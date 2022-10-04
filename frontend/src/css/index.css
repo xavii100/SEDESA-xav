@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================================== */
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content span {
+  /* color: black;
+    padding: 12px 16px;
+    text-decoration: none; */
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: block;
+}
+
+.dropdown-content a {
+  /* color: black;
+    padding: 12px 16px;
+    text-decoration: none; */
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content span:hover {
+  background-color: #235b4e;
+  color: #fff;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.border-line-color {
+  border-color: rgb(212 212 216);
+}
+
+.bandera {
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.alarma {
+  background-color: rgb(224, 18, 18);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.coma {
+  background-color: rgb(54, 2, 2);
+  border-radius: 25px;
+  text-align: center;
+  color: bisque;
+}
+
+.grave {
+  background-color: rgb(151, 13, 13);
+  border-radius: 25px;
+  text-align: center;
+  color: burlywood;
+}
+
+.normal {
+  background-color: rgb(255, 146, 21);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.mensaje {
+  display: inline-block;
+  margin-top: 7px;
+  width: 100%;
+  color: rgb(255, 234, 226);
+}
+/* ========================================================================== */
+
+/* Determine the size of the chart (tableros) */
+.chart {
+  width: 100%;
+  height: 30vh;
+}

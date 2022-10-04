@@ -1,0 +1,21 @@
+# Obtiene la lista de Síntomas
+'''
+/catalogos/get_sintomas/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "sintomas": [
+            lista de diccionarios {"csintoma_id", "nombre", "abreviatura", "principal" }
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

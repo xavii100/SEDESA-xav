@@ -1,0 +1,21 @@
+# Obtiene la lista de Estados Alertas
+'''
+/catalogos/get_estados_alertas/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "estado_alerta": [
+            lista de diccionarios {"cestado_alerta_id", "nombre", "abreviatura", "opciones": {"cestado_alerta_opcion_id","nombre"} }
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

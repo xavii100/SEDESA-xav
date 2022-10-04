@@ -1,0 +1,19 @@
+# Obtiene la lista de Roles
+'''
+/catalogos/get_roles/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "roles": [lista de diccionarios {"crol_id": id, "rol": "nombre_rol"} ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

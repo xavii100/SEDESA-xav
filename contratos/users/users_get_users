@@ -1,0 +1,22 @@
+# Obtiene la lista de Usuarios
+'''
+/users/get_users/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "listado_usuarios": [lista de diccionarios
+            {"tusuario_id": id, "is_active": True/False, "nombre_usuario": "nombre completo",
+            "email": "email", "rol": "rol", "nombre_hospital": "nombre_hospital"}
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

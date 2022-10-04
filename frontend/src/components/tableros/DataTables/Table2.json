@@ -1,0 +1,143 @@
+[
+  {
+    "headerName": "Unidad Médica",
+    "field": "unidad_medica",
+    "width": 300
+  },
+  {
+    "headerName": "Total general",
+    "children": [
+      {
+        "headerName": "Hoy",
+        "field": "total_hoy",
+        "width": 65
+      },
+      {
+        "headerName": "Acumulado",
+        "field": "total_acumulado",
+        "width": 100
+      }
+    ]
+  },
+  {
+    "headerName": "Aislamiento en casa",
+    "children": [
+      {
+        "headerName": "Hoy",
+        "field": "aislamiento_hoy",
+        "width": 65
+      },
+      {
+        "headerName": "Acumulado",
+        "field": "aislamiento_acumulado",
+        "width": 120
+      }
+    ]
+  },
+  {
+    "headerName": "Mejoría",
+    "children": [
+      {
+        "headerName": "Hoy",
+        "field": "mejoria_hoy",
+        "width": 65
+      },
+      {
+        "headerName": "Acumulado",
+        "field": "mejoria_acumulado",
+        "width": 100
+      }
+    ]
+  },
+  {
+    "headerName": "Voluntaria",
+    "children": [
+      {
+        "headerName": "Hoy",
+        "field": "voluntaria_hoy",
+        "width": 65
+      },
+      {
+        "headerName": "Acumulado",
+        "field": "voluntaria_acumulado",
+        "width": 100
+      }
+    ]
+  },
+  {
+    "headerName": "Domicilio",
+    "children": [
+      {
+        "headerName": "Hoy",
+        "field": "domicilio_hoy",
+        "width": 65
+      },
+      {
+        "headerName": "Acumulado",
+        "field": "domicilio_acumulado",
+        "width": 100
+      }
+    ]
+  },
+  {
+    "headerName": "Fuga",
+    "children": [
+      {
+        "headerName": "Hoy",
+        "field": "fuga_hoy",
+        "width": 65
+      },
+      {
+        "headerName": "Acumulado",
+        "field": "fuga_acumulado",
+        "width": 100
+      }
+    ]
+  },
+  {
+    "headerName": "Desconocido",
+    "children": [
+      {
+        "headerName": "Hoy",
+        "field": "desconocido_hoy",
+        "width": 65
+      },
+      {
+        "headerName": "Acumulado",
+        "field": "desconocido_acumulado",
+        "width": 100
+      }
+    ]
+  },
+  {
+    "headerName": "Defunciones",
+    "children": [
+      {
+        "headerName": "Hoy",
+        "field": "defunciones_hoy",
+        "width": 65
+      },
+      {
+        "headerName": "Acumulado",
+        "field": "defunciones_acumulado",
+        "width": 100
+      }
+    ]
+  },
+  {
+    "headerName": "Referidos",
+    "children": [
+      {
+        "headerName": "Hoy",
+        "field": "referidos_hoy",
+        "width": 65
+      },
+      {
+        "headerName": "Acumulado",
+        "field": "referidos_acumulado",
+        "width": 100,
+        "flex": 1
+      }
+    ]
+  }
+]

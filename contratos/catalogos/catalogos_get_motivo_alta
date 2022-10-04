@@ -1,0 +1,20 @@
+# Obtiene los datos de un Motivo de alta
+'''
+/catalogos/get_motivo_alta/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "motivo_alta_id" : "id" # esto es para ver información de un motivo de alta
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {
+            "cmotivo_alta_id", "nombre"
+        }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

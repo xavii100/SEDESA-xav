@@ -1,0 +1,59 @@
+# Obtiene la lista de Roles
+'''
+/users/get_roles/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "roles": [lista de diccionarios
+            {
+                "crol_id": id, "rol": "nombre_rol", "admin": True/False,
+                "permisos": [lista de diccionarios {
+                    "cmodulo_vista__url": "c_antecedentes",
+                    "cmodulo_vista__nombre": "Gestión de Antecedentes",
+                    "acciones": "crear,editar,listar"
+                }]
+            } 
+        
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''
+
+Ejemplo.
+
+{
+  "roles": [
+    {
+      "crol_id": 1,
+      "rol": "Administrador",
+      "admin": true,
+      "permisos": []
+    },
+    {
+      "crol_id": 2,
+      "rol": "Médico",
+      "admin": false,
+      "permisos": [
+        {
+          "cmodulo_vista__url": "triage",
+          "cmodulo_vista__nombre": "Gestión de Triage",
+          "acciones": "crear,listar"
+        },
+        {
+          "cmodulo_vista__url": "c_antecedentes",
+          "cmodulo_vista__nombre": "Gestión de Antecedentes",
+          "acciones": "crear,editar,listar"
+        }
+      ]
+    }
+  ]
+}

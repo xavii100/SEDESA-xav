@@ -1,0 +1,19 @@
+# Obtiene la lista de Motivos de alta
+'''
+/catalogos/get_motivos_alta/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "motivos_alta": [
+            lista de diccionarios {"cmotivo_alta_id","nombre"}
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

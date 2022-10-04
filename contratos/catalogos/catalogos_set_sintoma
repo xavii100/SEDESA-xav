@@ -1,0 +1,21 @@
+# Inserta/Edita un Síntoma
+'''
+/catalogos/set_sintomas/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "nombre" : "nombre del sintoma",
+        "abreviatura" : "abreviatura del sintoma",
+        "principal" : "True/False"
+        # opcional
+        "sintoma_id" = csintoma_id # esto es para editar un sintoma específico, sino se coloca, lo inserta
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+        
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

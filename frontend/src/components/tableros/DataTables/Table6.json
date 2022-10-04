@@ -1,0 +1,18 @@
+[
+  {
+    "headerName": "Entidad federativa",
+    "field": "entidad_federativa",
+    "width": 200,
+    "flex": 1
+  },
+  {
+    "headerName": "Cantidad",
+    "field": "cantidad",
+    "width": 100
+  },
+  {
+    "headerName": "%",
+    "field": "porcentaje",
+    "width": 100
+  }
+]

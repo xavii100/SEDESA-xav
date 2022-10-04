@@ -1,0 +1,18 @@
+[
+  {
+    "headerName": "Ventilador",
+    "field": "ventilador",
+    "width": 200,
+    "flex": 1
+  },
+  {
+    "headerName": "Cantidad",
+    "field": "cantidad",
+    "width": 100
+  },
+  {
+    "headerName": "%",
+    "field": "porcentaje",
+    "width": 100
+  }
+]

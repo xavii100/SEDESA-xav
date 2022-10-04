@@ -1,0 +1,30 @@
+'''
+/catalogos/get_antecedente/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "antecedente_id" : "id" # esto es para ver información de un Antecedente específico
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {"cantecedente_id","cantecedente_primario_id","nombre","abreviatura","sinonimos","triage" }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''
+
+Ejemplo:
+
+{
+  "data": {
+    "cantecedente_id": 32,
+    "cantecedente_primario": 30,
+    "nombre": "Anemia hemolítica",
+    "abreviatura": null,
+    "sinonimos": null,
+    "triage": false
+  }
+}

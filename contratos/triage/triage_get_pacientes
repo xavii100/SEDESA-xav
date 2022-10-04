@@ -1,0 +1,197 @@
+# Obtiene la lista de Pacientes Triage
+'''
+/triage/get_pacientes/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": [
+            {
+                "nombre": " pedro al pastor",
+                "fecha_registro": "2022-06-14, 00:00",
+                "genero": "H",
+                "fecha_nacimiento": "2022-06-13",
+                "edad": 0,
+                "fecha_inicio_sintomas": "2022-05-23",
+                "embarazo": true,
+                "semanas_gestacion": 4,
+                "filiacion": "ghty506",
+                "puntaje_news2": 3,
+                "puntaje_qsofa": 4,
+                "puntaje_glassgow": 6,
+                "sospecha_covid": true,
+                "hospital": "HOSPITAL DE ESPECIALIDADES DE LA CIUDAD DE MEXICO DR. BELISARIO DOMINGUEZ",
+                "hospital_corto": "HE Dr. Belisario D",
+                "elaborado": "Orlando Ramos Flores",
+                "sintomas": [
+                    {
+                    "csintoma__nombre": "Tos",
+                    "csintoma__abreviatura": "Tos",
+                    "csintoma__principal": true
+                    },
+                    {
+                    "csintoma__nombre": "Rinorrea",
+                    "csintoma__abreviatura": "Rinorrea",
+                    "csintoma__principal": false
+                    },
+                    {
+                    "csintoma__nombre": "Fiebre",
+                    "csintoma__abreviatura": "Fiebre",
+                    "csintoma__principal": true
+                    }
+                ],
+                "antecedentes": [
+                    {
+                    "cantecedente__nombre": "Anemia"
+                    },
+                    {
+                    "cantecedente__nombre": "Trastornos mixtos"
+                    }
+                ],
+                "estados_alerta": [
+                    {
+                    "cestado_alerta_opcion__nombre": "Espontánea",
+                    "cestado_alerta_opcion__estado_alerta__nombre": "Apertura ocular",
+                    "cestado_alerta_opcion__estado_alerta__abreviatura": "AOC"
+                    }
+                ],
+                "constantes_vitales": [
+                    {
+                    "cconstante_vital__nombre": "Frecuencia respiratoria",
+                    "cantidad": null
+                    }
+                ]
+            },
+            {
+                "nombre": " pedro al pastor",
+                "fecha_registro": "2022-06-16, 00:00",
+                "genero": "H",
+                "fecha_nacimiento": "2022-06-13",
+                "edad": 0,
+                "fecha_inicio_sintomas": "2022-05-23",
+                "embarazo": true,
+                "semanas_gestacion": 4,
+                "filiacion": "ghty506",
+                "puntaje_news2": 3,
+                "puntaje_qsofa": 4,
+                "puntaje_glassgow": 6,
+                "sospecha_covid": true,
+                "hospital": "HOSPITAL DE ESPECIALIDADES DE LA CIUDAD DE MEXICO DR. BELISARIO DOMINGUEZ",
+                "hospital_corto": "HE Dr. Belisario D",
+                "elaborado": "Orlando Ramos Flores",
+                "sintomas": [
+                    {
+                    "csintoma__nombre": "Fiebre",
+                    "csintoma__abreviatura": "Fiebre",
+                    "csintoma__principal": true
+                    },
+                    {
+                    "csintoma__nombre": "Tos",
+                    "csintoma__abreviatura": "Tos",
+                    "csintoma__principal": true
+                    },
+                    {
+                    "csintoma__nombre": "Rinorrea",
+                    "csintoma__abreviatura": "Rinorrea",
+                    "csintoma__principal": false
+                    }
+                ],
+                "antecedentes": [
+                    {
+                    "cantecedente__nombre": "Anemia"
+                    },
+                    {
+                    "cantecedente__nombre": "Trastornos mixtos"
+                    }
+                ],
+                "estados_alerta": [
+                    {
+                    "cestado_alerta_opcion__nombre": "Espontánea",
+                    "cestado_alerta_opcion__estado_alerta__nombre": "Apertura ocular",
+                    "cestado_alerta_opcion__estado_alerta__abreviatura": "AOC"
+                    }
+                ],
+                "constantes_vitales": [
+                    {
+                    "cconstante_vital__nombre": "Tensión arterial distólica",
+                    "cantidad": null
+                    },
+                    {
+                    "cconstante_vital__nombre": "Saturación de oxígeno",
+                    "cantidad": null
+                    },
+                    {
+                    "cconstante_vital__nombre": "Frecuencia respiratoria",
+                    "cantidad": null
+                    }
+                ]
+            },
+            {
+                "nombre": " pedro pepito",
+                "fecha_registro": "2022-06-16, 00:00",
+                "genero": "H",
+                "fecha_nacimiento": "2022-06-13",
+                "edad": 0,
+                "fecha_inicio_sintomas": "2022-05-23",
+                "embarazo": true,
+                "semanas_gestacion": 4,
+                "filiacion": "ghty506",
+                "puntaje_news2": 3,
+                "puntaje_qsofa": 4,
+                "puntaje_glassgow": 6,
+                "sospecha_covid": true,
+                "hospital": "HOSPITAL DE ESPECIALIDADES DE LA CIUDAD DE MEXICO DR. BELISARIO DOMINGUEZ",
+                "hospital_corto": "HE Dr. Belisario D",
+                "elaborado": "Orlando Ramos Flores",
+                "sintomas": [
+                    {
+                    "csintoma__nombre": "Fiebre",
+                    "csintoma__abreviatura": "Fiebre",
+                    "csintoma__principal": true
+                    },
+                    {
+                    "csintoma__nombre": "Tos",
+                    "csintoma__abreviatura": "Tos",
+                    "csintoma__principal": true
+                    },
+                    {
+                    "csintoma__nombre": "Rinorrea",
+                    "csintoma__abreviatura": "Rinorrea",
+                    "csintoma__principal": false
+                    }
+                ],
+                "antecedentes": [
+                    {
+                    "cantecedente__nombre": "Cetoacidosis diabética"
+                    }
+                ],
+                "estados_alerta": [
+                    {
+                    "cestado_alerta_opcion__nombre": "Espontánea",
+                    "cestado_alerta_opcion__estado_alerta__nombre": "Apertura ocular",
+                    "cestado_alerta_opcion__estado_alerta__abreviatura": "AOC"
+                    }
+                ],
+                "constantes_vitales": [
+                    {
+                    "cconstante_vital__nombre": "Tensión arterial distólica",
+                    "cantidad": null
+                    },
+                    {
+                    "cconstante_vital__nombre": "Frecuencia cardiaca",
+                    "cantidad": null
+                    }
+                ]
+            },
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

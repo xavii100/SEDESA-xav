@@ -1,0 +1,22 @@
+# Activar o Inactivar Usuario
+'''
+/users/active_user/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "id_usuario": id_usuario # esto es para editar un usuario específico
+        "activar": 1/0 : 1:True 0:False
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+        # opcional
+        "log": "Error de Excepction"
+    }
+'''

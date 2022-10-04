@@ -1,0 +1,22 @@
+# Obtiene la lista de la bitácora del ETL
+'''
+/catalogos/get_bitacora/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "tetl_reporte_historico_id" : "id_etl",
+        "fecha" : "fecha_etl",
+        "tipo" : "tipo_archivo",
+        "log" : "nombre_archivo",
+        "estatus" : "estatus del archivo",
+        "nombre_usuario" : "nombre_usuario_carga"
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

@@ -1,0 +1,23 @@
+[
+  {
+    "headerName": "Comorbilidad",
+    "field": "comorbilidad_nombre",
+    "width": 250,
+    "flex": 1
+  },
+  {
+    "headerName": "1",
+    "field": "comorbilidad_1",
+    "width": 100
+  },
+  {
+    "headerName": "2",
+    "field": "comorbilidad_2",
+    "width": 100
+  },
+  {
+    "headerName": "3",
+    "field": "comorbilidad_3",
+    "width": 100
+  }
+]

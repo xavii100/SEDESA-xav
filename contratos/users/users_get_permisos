@@ -1,0 +1,135 @@
+# Obtiene el Listado de todos los permisos
+'''
+/users/get_permisos/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "columnas": [lista de nombres de columnas],
+        "permisos": [lista de diccionarios
+            {cmodulo_vista_id, url, nombre, acciones}
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''
+
+{
+  "columnas": ["crear", "editar", "listar"],
+  "permisos": [
+    {
+      "cmodulo_vista_id": 1,
+      "url": "triage",
+      "nombre": "Gestión de Triage",
+      "acciones": [
+        "crear",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 2,
+      "url": "c_antecedentes",
+      "nombre": "Gestión de Antecedentes",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 3,
+      "url": "c_constantes_vitales",
+      "nombre": "Gestión de Constantes Vitales",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 4,
+      "url": "c_estado_alerta",
+      "nombre": "Gestión de Estados Alerta",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 5,
+      "url": "c_sintomas",
+      "nombre": "Gestión de Síntomas",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 6,
+      "url": "c_especialidad",
+      "nombre": "Gestión de Especialidades",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 7,
+      "url": "c_hospital",
+      "nombre": "Gestión de Hospitales",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 8,
+      "url": "c_motivo_alta",
+      "nombre": "Gestión de Motivos de alta",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 9,
+      "url": "c_vacuna",
+      "nombre": "Gestión de Vacunas",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 10,
+      "url": "c_medicamento",
+      "nombre": "Gestión de Medicamentos",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    },
+    {
+      "cmodulo_vista_id": 11,
+      "url": "c_terapeutica",
+      "nombre": "Gestión de Terapeutica",
+      "acciones": [
+        "crear",
+        "editar",
+        "listar"
+      ]
+    }
+  ]
+}

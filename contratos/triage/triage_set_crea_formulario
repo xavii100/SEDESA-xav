@@ -1,0 +1,41 @@
+# Guarda el Formulario en Triage
+'''
+/triage/set_crea_formulario/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "nombre": "nombre",
+        "filiacion": "filiacion",
+        "fecha_nacimiento": "fecha_nacimiento",
+        "genero": "H/M",
+        "fecha_inicio_sintomas": "fecha_inicio_sintomas",
+        "embarazo" : "embarazo",
+        "semanas_gestacion" : "semanas_gestacion",
+        "sospecha_covid" : "sospecha_covid",
+        "puntaje_news2" : "puntaje_news2",
+        "puntaje_qsofa" : "puntaje_qsofa",
+        "puntaje_glassgow" : "puntaje_glassgow",
+        "sintomas": [ids_sintomas],
+        "estados_alerta": [ids_estados_alerta],
+        "antecedentes": [ids_antecedentes],
+        "constantes_vitales": [
+            {
+                "id": "id_constante_vital",
+                "cantidad" : "cantidad"
+            }
+        ]
+
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+        
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+        # opcional
+        "log": "Error de Excepction"
+    }
+'''

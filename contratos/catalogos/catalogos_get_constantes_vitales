@@ -1,0 +1,21 @@
+# Obtiene la lista de Constante Vital
+'''
+/catalogos/get_constantes_vitales/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "constantes_vitales": [
+            lista de diccionarios {"cconstante_vital_id","nombre","abreviatura","min","max","alerta_menor_que","alerta_mayor_que" }
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

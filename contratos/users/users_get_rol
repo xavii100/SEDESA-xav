@@ -1,0 +1,69 @@
+# Obtiene los datos de un Rol
+'''
+/users/get_rol/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "id_rol": id_rol # esto es para ver información de un rol específico
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {
+            'crol_id': ,
+            'rol': ,
+            'admin': true/false,
+            "permisos": [lista de diccionarios {
+                "cmodulo_vista__url": "c_antecedentes",
+                "cmodulo_vista__nombre": "Gestión de Antecedentes",
+                "acciones": "crear,editar,listar"
+            }]
+        }
+
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+        # opcional
+        "log": "Error de Excepction"
+    }
+'''
+
+Ejemplo.
+
+"id_rol": 1
+{
+  "data": {
+    "crol_id": 1,
+    "rol": "Administrador",
+    "admin": true,
+    "permisos": []
+  }
+}
+
+
+"id_rol": 2
+{
+  "data": {
+    "crol_id": 2,
+    "rol": "Prueba Luis",
+    "admin": false,
+    "permisos": [
+      {
+        "cmodulo_vista__url": "triage",
+        "cmodulo_vista__nombre": "Gestión de Triage",
+        "acciones": "listar"
+      },
+      {
+        "cmodulo_vista__url": "c_antecedentes",
+        "cmodulo_vista__nombre": "Gestión de Antecedentes",
+        "acciones": "crear,editar,listar"
+      },
+      {
+        "cmodulo_vista__url": "c_sintomas",
+        "cmodulo_vista__nombre": "Gestión de Síntomas",
+        "acciones": "crear,editar,listar"
+      }
+    ]
+  }
+}

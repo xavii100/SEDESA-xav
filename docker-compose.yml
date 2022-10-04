@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+    si_sidesa:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: si_sidesa
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./:/code
+        # env_file: 
+        #     - ./enviroment.env

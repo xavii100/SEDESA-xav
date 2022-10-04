@@ -1,0 +1,19 @@
+# Agrega o edita una vacuna
+'''
+/catalogos/set_vacuna/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "nombre" : "nombre de la vacuna",
+        # opcional
+        "vacuna_id" = cvacuna_id # esto es para editar una vacuna específica, sino se coloca, lo inserta
+    }
+Datos enviados por el BACK
+    {
+        # status 201
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+        
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

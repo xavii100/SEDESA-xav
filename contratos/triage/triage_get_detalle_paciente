@@ -1,0 +1,74 @@
+# Obtiene el detalle de un Paciente
+'''
+/triage/get_detalle_paciente/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "id_paciente": "id_paciente"
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {
+            "nombre": "prueba luis",
+            "fecha_registro": "2022-06-16, 00:00",
+            "genero": "H",
+            "fecha_nacimiento": "2000-06-13",
+            "edad": 22,
+            "fecha_inicio_sintomas": "2022-01-22",
+            "embarazo": true,
+            "semanas_gestacion": 4,
+            "filiacion": "ghty506",
+            "puntaje_news2": 3,
+            "puntaje_qsofa": 4,
+            "puntaje_glassgow": 6,
+            "sospecha_covid": true,
+            "hospital": "HOSPITAL GENERAL DR. ENRIQUE CABRERA",
+            "hospital_corto": "HG Dr. Enrique Cabrera",
+            "elaborado": "Orlando Ramos Flores",
+            "sintomas": [
+                {
+                    "csintoma__nombre": "Fiebre",
+                    "csintoma__abreviatura": "Fiebre",
+                    "csintoma__principal": true
+                },
+                {
+                    "csintoma__nombre": "Tos",
+                    "csintoma__abreviatura": "Tos",
+                    "csintoma__principal": true
+                },
+                {
+                    "csintoma__nombre": "Rinorrea",
+                    "csintoma__abreviatura": "Rinorrea",
+                    "csintoma__principal": false
+                }
+            ],
+            "antecedentes": [
+                {
+                    "cantecedente__nombre": "Anemia aplásica"
+                }
+            ],
+            "estados_alerta": [
+                {
+                    "cestado_alerta_opcion__nombre": "Espontánea",
+                    "cestado_alerta_opcion__estado_alerta__nombre": "Apertura ocular",
+                    "cestado_alerta_opcion__estado_alerta__abreviatura": "AOC"
+                }
+            ],
+            "constantes_vitales": [
+                {
+                    "cconstante_vital__nombre": "Frecuencia respiratoria",
+                    "cantidad": 30.0
+                },
+                {
+                    "cconstante_vital__nombre": "Temperatura",
+                    "cantidad": null
+                }
+            ]
+        }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

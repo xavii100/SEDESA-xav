@@ -1,0 +1,27 @@
+# Edita el perfil Usuario
+'''
+/users/set_profile/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+
+        # opcional
+        "email": "email",
+        "password": "password",
+        "nombre": "nombre",
+        "apellido_paterno": "apellido_paterno",
+        "apellido_materno": "apellido_materno"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+        # opcional
+        "log": "Error de Excepction"
+    }
+'''

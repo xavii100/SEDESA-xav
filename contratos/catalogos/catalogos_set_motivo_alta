@@ -1,0 +1,19 @@
+# Agrega o edita un motivo de alta
+'''
+/catalogos/set_motivo_alta/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "nombre" : "nombre del motivo de alta",
+        # opcional
+        "motivo_alta_id" = cmotivo_alta_id # esto es para editar un motivo de alta especifico, sino se coloca, lo inserta
+    }
+Datos enviados por el BACK
+    {
+        # status 201
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+        
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

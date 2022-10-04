@@ -1,0 +1,19 @@
+# Agrega o edita un medicamento
+'''
+/catalogos/set_medicamento/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "nombre" : "nombre del medicamento",
+        # opcional
+        "medicamento_id" = cmedicamento_id # esto es para editar un  medicamento especifico, sino se coloca, lo inserta
+    }
+Datos enviados por el BACK
+    {
+        # status 201
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+        
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

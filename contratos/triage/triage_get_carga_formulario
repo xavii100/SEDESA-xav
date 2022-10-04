@@ -1,0 +1,33 @@
+# Obtiene la lista para la carga del Formulario en Triage
+'''
+/triage/get_carga_formulario/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+
+    Datos enviados por el BACK
+    {
+        # status 200
+        "sintomas_principales": [
+            lista de diccionarios {"csintoma_id", "nombre", "abreviatura", "principal", "boolean" }
+        ]
+        "sintomas_secundarios": [
+            lista de diccionarios {"csintoma_id", "nombre", "abreviatura", "principal", "boolean" }
+        ]
+        "constantes_vitales": [
+            lista de diccionarios {"cconstante_vital_id","nombre","abreviatura","min","max","alerta_menor_que","alerta_mayor_que" }
+        ]
+        "antecedentes": [
+            lista de diccionarios {"cantecedente_id","nombre","abreviatura","sinonimos","boolean" }
+        ]
+        "estado_alerta": [
+            lista de diccionarios {"cestado_alerta_id","nombre","abreviatura","cantidad","opciones": {"cestado_alerta_opcion_id","nombre"} }
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

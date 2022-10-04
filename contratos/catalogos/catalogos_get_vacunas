@@ -1,0 +1,19 @@
+# Obtiene la lista de Vacunas
+'''
+/catalogos/get_vacunas/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+Datos enviados por el BACK
+    {
+        # status 201
+        "vacunas": [
+            lista de diccionarios {"cvacuna_id","nombre"}
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

@@ -1,0 +1,20 @@
+# Obtiene los datos de un Medicamento
+'''
+/catalogos/get_medicamento/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "medicamento_id" : "id" # esto es para ver información de un medicamento específico
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {
+            "cmedicamento_id", "nombre"
+        }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

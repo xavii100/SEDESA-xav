@@ -1,0 +1,17 @@
+Catálogos de Permisos
+
+    url                 |       nombre                  |       acciones
+triage                  | Gestión de Triage             | crear,listar
+c_antecedentes          | Gestión de Antecedentes       | crear,editar,listar
+c_constantes_vitales    | Gestión de Constantes Vitales | crear,editar,listar
+c_estado_alerta         | Gestión de Estados Alerta     | crear,editar,listar
+c_sintomas              | Gestión de Síntomas           | crear,editar,listar
+c_especialidad          | Gestión de Especialidades     | crear,editar,listar
+c_hospital              | Gestión de Hospitales         | crear,editar,listar
+c_motivo_alta           | Gestión de Motivos Alta       | crear,editar,listar
+c_medicamento           | Gestión de Medicamentos       | crear,editar,listar
+c_vacuna                | Gestión de Vacunas            | crear,editar,listar
+c_terapeutica           | Gestión de Terapeutica        | crear,editar,listar
+tablero                 | Administrar Tableros          | listar
+expediente              | Administrar Expedientes       | listar
+bitacora                | Administrar Bitácora          | listar

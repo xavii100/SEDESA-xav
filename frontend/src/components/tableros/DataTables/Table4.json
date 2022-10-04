@@ -1,0 +1,18 @@
+[
+  {
+    "headerName": "Sexo",
+    "field": "sexo",
+    "width": 150
+  },
+  {
+    "headerName": "Cantidad",
+    "field": "cantidad",
+    "width": 100
+  },
+  {
+    "headerName": "%",
+    "field": "porcentaje",
+    "width": 100,
+    "flex": 1
+  }
+]

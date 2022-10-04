@@ -1,0 +1,21 @@
+# Obtiene la lista de Antecedentes
+'''
+/catalogos/get_antecedentes/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "antecedentes": [
+            lista de diccionarios {"cantecedente_id","cantecedente_primario_id","nombre","abreviatura","sinonimos","triage" }
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

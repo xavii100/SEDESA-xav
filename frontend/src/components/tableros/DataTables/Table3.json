@@ -1,0 +1,18 @@
+[
+  {
+    "headerName": "Grupos de edad",
+    "field": "grupo",
+    "width": 150
+  },
+  {
+    "headerName": "Total",
+    "field": "total",
+    "width": 100
+  },
+  {
+    "headerName": "%",
+    "field": "porcentaje",
+    "width": 100,
+    "flex": 1
+  }
+]

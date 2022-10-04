@@ -1,0 +1,32 @@
+# Añade o edita Rol con sus permisos
+'''
+/users/set_role/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "rol": "nombre del rol",
+        "sudo": 1/0 : 1:True 0:False, # si no se envìa la variable por default es False
+
+        # opcional
+        "permisos": [
+            {
+                "cmodulo_vista_id": "cmodulo_vista_id",
+                "acciones" : [lista de String de las acciones]
+            }
+        ] # Es opcional, pero si no tiene permisos el Rol, no debe de ver ningún Menú, sólo la pantalla de Bienvenida
+        # Si no se le envían los permisos y dicho Rol los tiene, entonces se les resetean y se queda sin permisos
+
+        # opcional - SOLO para EDITAR
+        "crol_id": crol_id # esto es para editar un rol específico, sino se coloca, lo inserta
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+        # opcional
+        "log": "Error de Excepction"
+    }
+'''

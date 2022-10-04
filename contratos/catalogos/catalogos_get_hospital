@@ -1,0 +1,40 @@
+# Obtiene los datos de un Hospital
+'''
+/catalogos/get_hospital/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización", 
+        "hospital_id" : "id" # esto es para ver información de un hospital específico
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {
+            "thospital_id","nombre",
+            "nombre_corto",
+            "direccion",
+            "atiende_covid19",
+            "clues",
+            "cp"
+        }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+
+
+Ejemplo
+
+"hospital_id": 1
+{
+  "data": {
+    "thospital_id": 1,
+    "nombre": "HOSPITAL DE ESPECIALIDADES DE LA CIUDAD DE MEXICO DR. BELISARIO DOMINGUEZ",
+    "nombre_corto": "HE Dr. Belisario D",
+    "direccion": "Av. Tlahuac 4866, Col. San Lorenzo Tezonco. Iztapalapa",
+    "atiende_covid19": true,
+    "clues": "DFSSA004265",
+    "cp": 9790
+  }
+}

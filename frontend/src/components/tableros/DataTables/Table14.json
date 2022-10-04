@@ -1,0 +1,23 @@
+[
+  {
+    "headerName": "Comorbilidad 60 y más años",
+    "field": "comorbilidad_60_y_mas",
+    "width": 300,
+    "flex": 1
+  },
+  {
+    "headerName": "1",
+    "field": "comorbilidad_60_y_mas_1",
+    "width": 100
+  },
+  {
+    "headerName": "2",
+    "field": "comorbilidad_60_y_mas_2",
+    "width": 100
+  },
+  {
+    "headerName": "3",
+    "field": "comorbilidad_60_y_mas_3",
+    "width": 100
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "headerName": "Personas por hospital",
+    "field": "personas_por_hospital",
+    "width": 300,
+    "flex": 1
+  },
+  {
+    "headerName": "Cantidad",
+    "field": "cantidad",
+    "width": 100
+  },
+  {
+    "headerName": "%",
+    "field": "porcentaje",
+    "width": 100
+  }
+]

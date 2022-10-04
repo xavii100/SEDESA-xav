@@ -1,0 +1,88 @@
+[
+  {
+    "headerName": "Unidad Médica",
+    "field": "unidad_medica",
+    "width": 300
+  },
+  {
+    "headerName": "Total general",
+    "children": [
+      {
+        "headerName": "Total de ingreso hoy",
+        "field": "total_ingreso_hoy",
+        "width": 100
+      },
+      {
+        "headerName": "Total de pacientes que reciben atención hoy",
+        "field": "total_pacientes_hoy",
+        "width": 120
+      }
+    ]
+  },
+  {
+    "headerName": "Pacientes Hospitalizados",
+    "children": [
+      {
+        "headerName": "Ingreso hoy",
+        "field": "hospitalizados_ingreso_hoy",
+        "width": 100
+      },
+      {
+        "headerName": "Pacientes que reciben atención",
+        "field": "hospitalizados_pacientes_atencion",
+        "width": 120
+      }
+    ]
+  },
+  {
+    "headerName": "Pacientes en Terapia Intermedia",
+    "children": [
+      {
+        "headerName": "Ingreso hoy",
+        "field": "terapia_ingreso_hoy",
+        "width": 110
+      },
+      {
+        "headerName": "Pacientes que reciben atención",
+        "field": "terapia_pacientes_atencion",
+        "width": 140
+      }
+    ]
+  },
+  {
+    "headerName": "Pacientes en UCIA *",
+    "children": [
+      {
+        "headerName": "Ingresos hoy",
+        "field": "ucia_ingresos_hoy",
+        "width": 100
+      },
+      {
+        "headerName": "Pacientes que recibe atención",
+        "field": "ucia_pacientes_atencion",
+        "width": 120
+      }
+    ]
+  },
+  {
+    "headerName": "Pacientes en Urgencias",
+    "children": [
+      {
+        "headerName": "Ingresos hoy",
+        "field": "urgencias_ingresos_hoy",
+        "width": 100
+      },
+      {
+        "headerName": "Pacientes que recibe atención",
+        "field": "urgencias_pacientes_atencion",
+        "width": 120
+      }
+    ]
+  },
+  {
+    "headerName": "Pacientes que ingresaron y les dieron el alta el mismo día",
+    "field": "pacientes_alta_mismo_dia",
+    "width": 120,
+    "flex": 1
+  }
+]

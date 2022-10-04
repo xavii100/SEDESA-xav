@@ -1,0 +1,23 @@
+# Agrega o edita un hospital
+'''
+/catalogos/set_hospital/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "nombre" : "nombre hospital",
+        "nombre_corto" : "nombre corto de hospital",
+        "direccion" : "direccion hospital",
+        "atiende_covid19" : "True/False",
+        "clues" : "clues",
+        "cp" : "cp", 
+        "hospital_id" : "id" #opcional para editar hospital
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+        
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

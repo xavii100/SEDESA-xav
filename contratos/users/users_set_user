@@ -1,0 +1,38 @@
+# Añade o edita Usuario, cuando se agrega uno se le envía notificación por Email de su acceso
+'''
+/users/set_user/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "thospital": id_hospital,
+        "crol": id_rol,
+        "email": "email",
+
+        # opcional
+        "id_usuario": id_usuario # esto es para editar un usuario específico, sino se coloca, lo inserta
+        "password": "password",
+        "nombre": "nombre",
+        "apellido_paterno": "apellido_paterno",
+        "apellido_materno": "apellido_materno",
+        "fecha_nacimiento": Acepta cualquiera de los formatos siguientes: "%Y-%m-%d","%Y/%m/%d","%d-%m-%Y","%d/%m/%Y",
+        "sexo": "letras: M/F",
+        "curp": "curp",
+        "rfc": "rfc",
+        "telefono": "telefono",
+        "cedula_profesional": "cedula_profesional",
+        "usuario_autoriza": "usuario_autoriza",
+        "cargo_usuario_autoriza": "cargo_usuario_autoriza"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "success": "Texto de success para mostrarle al usuario en el sistema"
+
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+        # opcional
+        "log": "Error de Excepction"
+    }
+'''

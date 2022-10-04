@@ -1,0 +1,38 @@
+[
+  {
+    "headerName": "Tipo de vacuna",
+    "field": "tipo_vacuna",
+    "width": 300,
+    "flex": 1
+  },
+  {
+    "headerName": "Total",
+    "field": "total",
+    "width": 100
+  },
+  {
+    "headerName": "Primera dosis",
+    "field": "primera_dosis",
+    "width": 150
+  },
+  {
+    "headerName": "Segunda dosis",
+    "field": "segunda_dosis",
+    "width": 150
+  },
+  {
+    "headerName": "Refuerzo",
+    "field": "refuerzo",
+    "width": 150
+  },
+  {
+    "headerName": "Sin especificar",
+    "field": "sin_especificar",
+    "width": 150
+  },
+  {
+    "headerName": "%",
+    "field": "porcentaje",
+    "width": 100
+  }
+]

@@ -1,0 +1,19 @@
+# Obtiene la lista de Medicamentos
+'''
+/catalogos/get_medicamentos/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+Datos enviados por el BACK
+    {
+        # status 201
+        "medicamentos": [
+            lista de diccionarios {"cmedicamento_id","nombre"}
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

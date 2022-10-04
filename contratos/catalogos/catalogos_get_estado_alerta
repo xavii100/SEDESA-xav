@@ -1,0 +1,44 @@
+# Obtiene los datos de un Estado Alerta
+'''
+/catalogos/get_estado_alerta/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "estado_alerta_id" : "id" # esto es para ver información de un Estado Alerta específico
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {
+            "cestado_alerta_id",
+            "nombre",
+            "abreviatura",
+            "opciones": [ {"cestado_alerta_opcion_id","nombre"} ]
+        }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''
+
+Ejemplo
+
+
+{
+  "data": {
+    "cestado_alerta_id": 1,
+    "nombre": "Estado de alerta",
+    "abreviatura": "EDA",
+    "opciones": [
+      {
+        "cestado_alerta_opcion_id": 1,
+        "nombre": "Alerta"
+      },
+      {
+        "cestado_alerta_opcion_id": 2,
+        "nombre": "Desorientado"
+      }
+    ]
+  }
+}

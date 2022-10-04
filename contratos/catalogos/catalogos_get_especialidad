@@ -1,0 +1,29 @@
+# Obtiene los datos de una Especialidad
+'''
+/catalogos/get_especialidad/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "especialidad_tipo_id" : "id" # esto es para ver información de una Especialidad específico
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {"cespecialidad_tipo_id","nombre","agrupar_en_otras" }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''
+
+Ejemplo:
+
+
+{
+  "data": {
+    "cespecialidad_tipo_id": 1,
+    "nombre": "Medicina Interna",
+    "agrupar_en_otras": false
+  }
+}

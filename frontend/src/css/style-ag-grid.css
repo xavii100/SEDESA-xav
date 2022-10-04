@@ -1,0 +1,23 @@
+.ag-theme-alpine {
+  --ag-grid-size: 3px;
+  --ag-list-item-height: 15px;
+  --ag-header-height: 30px;
+  --ag-row-height: 25px;
+
+  --ag-header-column-separator-display: block;
+  --ag-header-column-separator-height: 100%;
+  --ag-header-column-separator-width: 1.5px;
+  --ag-header-column-separator-color: black;
+}
+
+.ag-theme-alpine .ag-header-group-cell {
+  font-size: 15px;
+}
+
+.ag-theme-alpine .ag-header-cell {
+  font-size: 15px;
+}
+
+.ag-theme-alpine .ag-header-group-cell, .ag-header-cell {
+  font-weight: normal;
+}

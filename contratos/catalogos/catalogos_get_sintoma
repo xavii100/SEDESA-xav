@@ -1,0 +1,28 @@
+'''
+/catalogos/get_sintoma/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "sintoma_id" : "id" # esto es para ver información de un síntoma específico
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {"csintoma_id", "nombre", "abreviatura", "principal" }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+
+
+Ejemplo:
+
+{
+  "data": {
+    "csintoma_id": 10,
+    "nombre": "Cefalea",
+    "abreviatura": "Cefalea",
+    "principal": true
+  }
+}

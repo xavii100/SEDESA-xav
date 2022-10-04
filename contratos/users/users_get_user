@@ -1,0 +1,45 @@
+# Obtiene los datos de un Usuario
+'''
+/users/get_user/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "id_user": id_user # esto es para ver información de un usuario específico
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {
+            'usuario_id': ,
+            'email': ,
+            'nombre': ,
+            'apellido_paterno': ,
+            'apellido_materno': ,
+            'nombre_completo': ,
+            "fecha_nacimiento": "YYYY-MM-DD",
+            "sexo": "letras: M/F",
+            "curp": "curp",
+            "rfc": "rfc",
+            "telefono": "telefono",
+            "cedula_profesional": "cedula_profesional",
+            "usuario_autoriza": "usuario_autoriza",
+            "cargo_usuario_autoriza": "cargo_usuario_autoriza",
+            'rol_id': ,
+            'rol': ,
+            'admin': true/false,
+            'hospital_id': ,
+            'hospital': ,
+            'hospital_corto': ,
+            "permisos": {
+                "url" : [ acciones ]
+            }
+        }
+
+        # status 400
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+        # opcional
+        "log": "Error de Excepction"
+    }
+'''

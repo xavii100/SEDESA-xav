@@ -1,0 +1,21 @@
+# Obtiene la lista de Especialidades
+'''
+/catalogos/get_especialidades/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "especialidades": [
+            lista de diccionarios {"cespecialidad_tipo_id","nombre","agrupar_en_otras" }
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

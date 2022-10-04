@@ -1,0 +1,20 @@
+# Obtiene los datos de una Vacuna
+'''
+/catalogos/get_vacuna/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "vacuna_id" : "id" # esto es para ver información de una vacuna específica
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {
+            "cvacuna_id", "nombre"
+        }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

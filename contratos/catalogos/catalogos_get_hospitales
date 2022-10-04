@@ -1,0 +1,21 @@
+# Obtiene la lista de Hospitales
+'''
+/catalogos/get_hospitales/
+
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización"
+    }
+
+Datos enviados por el BACK
+    {
+        # status 200
+        "hospitales": [
+            lista de diccionarios {"thospital_id","nombre","nombre_corto","direccion","atiende_covid19","clues","cp" }
+        ]
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''

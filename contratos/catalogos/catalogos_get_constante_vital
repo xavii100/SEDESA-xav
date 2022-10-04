@@ -1,0 +1,41 @@
+# Obtiene los datos de una Constante Vital
+'''
+/catalogos/get_constante_vital/
+Datos enviados por el FRONT
+    {
+        "token": "token_autorización",
+        "constante_vital_id" : "id" # esto es para ver información de una constante vital específico
+    }
+Datos enviados por el BACK
+    {
+        # status 200
+        "data": {
+            "cconstante_vital_id",
+            "nombre",
+            "abreviatura",
+            "min",
+            "max",
+            "alerta_menor_que",
+            "alerta_mayor_que"
+        }
+
+        # status 400
+        "log": "Error de Excepction",
+        "error": "Texto de error para mostrarle al usuario en el sistema"
+    }
+'''
+
+
+Ejemplo:
+
+{
+  "data": {
+    "cconstante_vital_id": 10,
+    "nombre": "Pulsaciones",
+    "abreviatura": "PUL",
+    "min": 120.0,
+    "max": 150.0,
+    "alerta_menor_que": 110.0,
+    "alerta_mayor_que": 180.0
+  }
+}
